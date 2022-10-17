@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bucket Data</title>
+	</head>
+	<body>
+		<h1 style="text-align: center;"><b>Assignment 3 - Creation of bucket data in cloud and Watson Assistant</b></h1>
+            <h2 style="text-align: center;">Team Member : Nivetha</h2>
+            <img style="width: 640px;height: 480px;" src="https://nivetha.s3.jp-tok.cloud-object-storage.appdomain.cloud/hosimg2.jpg">
+			<img style="width: 640px;height: 480px;" src="https://nivetha.s3.jp-tok.cloud-object-storage.appdomain.cloud/hosimg3.jpeg">
+			<img style="width: 640px;height: 480px;" src="https://nivetha.s3.jp-tok.cloud-object-storage.appdomain.cloud/hosimg4.jfif">
+			<img style="width: 640px;height: 480px;" src="https://nivetha.s3.jp-tok.cloud-object-storage.appdomain.cloud/hosimg5.jpeg">
+			<img style="width: 640px;height: 480px;" src="https://nivetha.s3.jp-tok.cloud-object-storage.appdomain.cloud/hospitalimg1.jpg">	
+	</body>
+	<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "c31033ce-aea8-427d-b6fe-ad86169db3e9", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "c9063080-f412-42f1-9555-2d29a18ba88c", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</html>
