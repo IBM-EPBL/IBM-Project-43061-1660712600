@@ -1,0 +1,25 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>signup Form</title>       
+</head>    
+<body>    
+    <h2 style="border: 2px solid DodgerBlue;"><center> SIGNUP PAGE</center></h2><br>    
+    <div class="login">    
+    <form id="login" method="POST" action="{{ url_for('hello_world') }}"> 
+        <label><b>Email    
+        </b>    
+        </label>    
+        <input type="text" name="email" placeholder="Email">   
+        <br><br>     
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="text" name="pword" placeholder="Password">    
+        <a href="/signup"> signup</a>
+        <br><br>    
+       <input type="submit">  
+    </form>     
+</div>    
+</body>    
+</html>     
